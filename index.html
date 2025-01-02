@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="https://use.typekit.net/wtp7wnk.css">  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rokkitt:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <header> 
+        <nav> 
+
+            <div class="header-logo-container">
+                 <img src="images/Logo.png" alt="Logo" class="logo"> 
+            </div>
+
+            <div class="middle">
+                <ul class="nav-menu">
+                    <li class="nav-item"> <a href="#" class="nav-link" >Books</a> 
+                        <ul class="dropdown-menu">
+                            <li><a href="#" >Comics</a></li>
+                            <li><a href="#" >Most Popular</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"> <a href="#" class="nav-link" >Animation</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" >TV Shows</a></li>
+                            <li><a href="#" >Movies</a></li>
+                            <li><a href="#" >Popular Episodes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link" >Characters</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" >Moomintroll</a></li>
+                            <li><a href="#" >MoominPapa</a></li>
+                            <li><a href="#" >Snufkin</a></li>
+                            <li><a href="#" >Little My</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link" >Artwork</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" >Paintings</a></li>
+                            <li><a href="#" >Backgrounds</a></li>
+                            <li><a href="#" >Fan Art</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link" >Music</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" >Soundtrack</a></li>
+                            <li><a href="#" >Instruments</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="right">
+                <img src="images/profile-icon.png" alt="Profile Icon" class="profile-icon">
+                <button class="sign-in-btn">Sign In</button>
+              </div>
+
+        </nav>
+
+        <section class="hero-container">
+
+         <img class="hero-image" src="images/MoominHero.png" alt="what">
+        <!-- <h1 class="hero-title">MOOMINVALLEY</h1>
+        <div class="hero-overlay"> </div> -->
+
+        </section>
+
+
+    </header>
+
+    <main>
+            <!-- this is the section below the primary hero image where the green bar and head text goes -->
+            <section class="hero-details"> 
+
+                <div class="green-divider"> </div>
+
+                <div class="welcome-text"> 
+                    <h4 class="welcome-category">BOOKS</h4>
+                    <h1 class="welcome-head"> Exploring Moominvalley</h1>
+                    <h2 class="welcome-subhead"> Dive into the paradise dreamed by Tove Jansson> </h2>
+                    <h3 class="welcome-author"> By Emma Thompson</h3> 
+                </div>
+
+            </section>
+
+            <section class="top-article"> 
+                <div class="top-article-image"> <img src="Images/Love.png" alt="what"> </div>
+                <div class="top-article-headers"> 
+                    <h1 class="top-category"> ANIMATION</h1>
+                    <h1 class="top-headline"> Moomin Confesses his Tender Love</h1> 
+                    <h2 class="top-subhead"> Will Moomin's courageous leap turn his vulnerability into strength? </h2> 
+                    <h3 class="top-author"> By Alexandra Bennett </h3>
+                    <img class="heart" src="Images/Heart.png" data-filled="Images/Heart Click.png" alt="Heart">
+                </div>
+                <div class="top-background"> </div>
+            </section>
+
+
+            <!-- Do I even need this carousel parent? -->
+            <section class="carousel">
+
+                <section class="car-header-container">
+                    <!-- I removed the header from the parent carousel container so that the arrows could be formatted with the viewporth width and not stick to the last image that is overflowing -->
+                    <!-- <div class="carousel-header">  -->
+                        <div class="carousel-header-label"> <h1> THE LATEST </h1></div>
+                        <div class="carousel-arrows"> 
+                            <img class="left-arrow" src="Images/Left Arrow.png"> 
+                            <img class="right-arrow" src="Images/Right Arrow.png">
+                        </div>
+                    </div>
+                </section>
+
+                <div> 
+                <!-- <button class="right-arrow">▶</button>  -->
+                </div>
+                <div class="carousel-articles">
+                    <div class="car-article"> <h1 class= car-date> February 11, 10:30 am</h1> <img class="serene" src="Images/Serene.png" alt="what"> <h2 class=car-category>SOUNDTRACK</h2> <h3 class="Headline-C">The Sweet Harmonies of Home</h3> <h4 class="Subhead-C"> Enjoy the sounds of nature with Snufkin</h4> <h5 class="car-author">By Ethan Reynolds</h5><img class="heart" src="Images/Heart.png" data-filled="Images/Heart Click.png" alt="Heart"> </div>
+                    <div class="car-article"> <h1 class= car-date> February 5, 9:45 am</h1> <img class= "car-image" src="Images/Imagine.png" alt="what"> <h2 class=car-category>ARTWORK</h2> <h3 class="Headline-C">Masterpieces Reimagined</h3> <h4 class="Subhead-C"> See how fans turn the art of Moomin into stories of their own.</h4> <h5 class="car-author">Emily Mitchell</h5><img class="heart" src="Images/Heart.png" data-filled="Images/Heart Click.png" alt="Heart"> </div>
+                    <div class="car-article"> <h1 class= car-date> February 7, 1:31 pm</h1> <img class= "car-image" src="Images/Basement.png" alt="what"> <h2 class=car-category>BOOKS</h2> <h3 class="Headline-C">Secrets Hidden in the basement</h3> <h4 class="Subhead-C"> What has Moomin been hiding this whole time?</h4> <h5 class="car-author">By Daniel Turner</h5><img class="heart" src="Images/Heart.png" data-filled="Images/Heart Click.png" alt="Heart"> </div>
+                    <div class="car-article"> <h1 class= car-date> February 9, 2:11 pm</h1> <img class= "car-image" src="Images/Book.png" alt="what"> <h2 class=car-category>BOOKS</h2> <h3 class="Headline-C">Moomin's Most Popular</h3> <h4 class="Subhead-C"> See the complete set of Jansson's most beloved comics</h4> <h5 class="car-author">By Liv Foster</h5><img class="heart" src="Images/Heart.png" data-filled="Images/Heart Click.png" alt="Heart"> </div>
+                    <div class="car-article"> <img class= "car-image" src="Images/Space.png"></div>
+                </div>
+                
+
+            </section>
+
+            <section class="body-headers"> 
+                <div class="pop-headers"> 
+                    <div class= "pop-header"> <h1 class="body-header"> MOST POPULAR </h1> </div>
+                </div>
+
+                <div class="ani-headers">
+                    <div class= "ani-header"> <h1 class="body-header"> ANIMATION </h1> </div>
+                    <div class= "ani-header"> </div>
+                </div>
+
+                
+
+            </section>
+
+
+            <section class="body-articles">
+                
+                <section class="popular-articles">
+
+                    <div class="pop-article"> <img src="Images/Tove.png" alt="what"> <img class="heart" src="Images/Heart.png" data-filled="Images/Heart Click.png" alt="Heart"><h1 class=Headline-B> The Creative Mind of Tove Jansson </h1> <h2 class="Subhead-B">Here's how Jansson created the wonderful world of Moomin</h2> </div>
+                    <div class="pop-article"> <img src="Images/Desktop.png" alt="what"><img class="heart" src="Images/Heart.png" data-filled="Images/Heart Click.png" alt="Heart"> <h1 class=Headline-B> Transform your Desktop </h1> <h2 class="Subhead-B">Use your favorite wallpaper to live in Moominvalley every day</h2> </div>
+                    <div class="pop-article"> <img src="Images/Covent.png" alt="what"><img class="heart" src="Images/Heart.png" data-filled="Images/Heart Click.png" alt="Heart"> <h1 class=Headline-B> Visit the Moomin Shop in Covent Garden </h1> <h2 class="Subhead-B">Here's where you can find all of Moomin's greatest adventures and treasures.</h2> </div>
+                    <div class="pop-article"> <img src="Images/Comics.png" alt="what"><img class="heart" src="Images/Heart.png" data-filled="Images/Heart Click.png" alt="Heart"> <h1 class=Headline-B> The Art of Comics </h1> <h2 class="Subhead-B">Why did Jansson choose to tell her story in the form of comics? </h2> </div>
+                </section>
+
+                <section class="vert-line"> </section>
+                 
+                <Section class=" animation-articles">
+
+                    <div class="ani-article"> <img src="Images/Tea.png" alt="what"> <img class="heart" src="Images/Heart.png" data-filled="Images/Heart Click.png" alt="Heart"> <h1 class=Headline-A> Moominpapa Spills the Tea </h1> <h2 class="Subhead-A">Moominpapa lets a secret slip in this dramatic episode</h2> </div>
+                    <div class="ani-article"> <img src="Images/Clouds.png" alt="what"> <img class="heart" src="Images/Heart.png" data-filled="Images/Heart Click.png" alt="Heart"><h1 class=Headline-A> Flying on Clouds </h1> <h2 class="Subhead-A">You can't keep your feet on the ground with Moomin today</h2> </div>
+                    <div class="ani-article"> <img src="Images/Flowers.png" alt="what"> <img class="heart" src="Images/Heart.png" data-filled="Images/Heart Click.png" alt="Heart"><h1 class=Headline-A> Blooms of Joy Under the Tree </h1> <h2 class="Subhead-A">What he'd give just to grow some flowers with you</h2> </div>
+                    <div class="ani-article"> <img src="Images/Backpack.png" alt="what"><img class="heart" src="Images/Heart.png" data-filled="Images/Heart Click.png" alt="Heart"> <h1 class=Headline-A> Backpack Adventure </h1> <h2 class="Subhead-A">Moomin takes a walk in the wild in this beautiful episode. What does he find on his journey?</h2> </div>
+                    <div class="ani-article"> <img src="Images/Attack.png" alt="what"> <img class="heart" src="Images/Heart.png" data-filled="Images/Heart Click.png" alt="Heart"><h1 class=Headline-A> Don't Make Moomin Angry </h1> <h2 class="Subhead-A">Just kidding. Moomin would never attack someone. But then what is he doing in this episode?</h2> </div>
+                    <div class="ani-article"> <img src="Images/Bubble.png" alt="what"> <img class="heart" src="Images/Heart.png" data-filled="Images/Heart Click.png" alt="Heart"><h1 class=Headline-A> Living in a Bubble </h1> <h2 class="Subhead-A">Floating on bubbles or floating on clouds... Whick is the better way of travel?</h2> </div>
+                </Section>
+
+            </section>
+
+            <section class="footer-articles"> 
+
+                <div class="character-header"> <h1 class="body-header"> CHARACTERS </h1></div>
+                <div class="character-articles"> 
+                    <div class="char-article"> <img class="berry" src="Images/Berry.png" alt="what"> <h1 class=Headline-D> Meet A Fairy Tale's Favorite Troll </h1> <h2 class="Subhead-D">Meet Moomintroll and join him and his friends in fantastic adventures</h2> <h3 class="char-author">Jacob Hayes</h3> <img class="heart" src="Images/Heart.png" data-filled="Images/Heart Click.png" alt="Heart"> </div>
+                    <div class="char-article"> <img class="friends" src="Images/Friends.png" alt="what"> <h1 class=Headline-D> The Friendly Faces of Moominvalley </h1> <h2 class="Subhead-D">Who exactly is everyone in Moominvally, and how did they all find themselves there? </h2> <h3 class="char-author">Alyssa Hughes</h3> <img class="heart" src="Images/Heart.png" data-filled="Images/Heart Click.png" alt="Heart"> </div>
+                </div>
+
+            </section>
+    </main>
+
+    <footer> 
+
+        <section class="footer"> 
+
+            <div class="top-section"> 
+                <div class="footer-logo-container"> <img src="images/Logo.png" alt="Logo" class="logo"> </div>
+                <div class="tagline-container"><h1 class= "tagline"> Experience the Magic of Storytelling</h1></div>
+            </div>
+
+            <div class="bottom-section">
+                <nav class=" nav-footer"> 
+                    <ul class="footer-ul"> 
+                        <li class="nav-item-2"> <a href="#" class="nav-link-2" >Books</a> </li>
+                        <li class="nav-item-2"> <a href="#" class="nav-link-2" >Animation</a> </li>
+                        <li class="nav-item-2"> <a href="#" class="nav-link-2" >Characters</a> </li>
+                        <li class="nav-item-2"> <a href="#" class="nav-link-2" >Artwork</a> </li>
+                        <li class="nav-item-2"> <a href="#" class="nav-link-2" >Soundtrack</a> </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </section>
+
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

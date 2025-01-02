@@ -1,0 +1,733 @@
+header {
+    position: relative;
+  }
+  
+  html, body {
+     margin: 0; 
+     padding: 0;
+     overflow-x: hidden;
+    }
+
+    :-webkit-any(article, aside, nav, section) :-webkit-any(article, aside, nav, section) h1 {
+      margin-block-start: 0;
+      margin-block-end: 0;
+  }
+
+ /*general Navigation Bar*/ 
+  nav {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between left, middle, and right sections */
+    align-items: center; /* Center items vertically */
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100vw;
+    height:10%;
+    padding: 15px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  
+  .header-logo-container{
+    width:10vw;
+    margin-left:3%;
+
+  } 
+
+  .logo {
+    width: 100%;
+    height: auto;
+    /* margin-left: 30px; 
+    margin-right: 30px;
+    margin-top: 40px;
+    margin-bottom:45px; */
+  }
+  
+  /*Middle section*/ 
+  .middle {
+    display: flex; /* Use Flexbox in the middle section */
+    justify-content: left; /* Center the navigation links horizontally */
+    flex-grow: 2; /* Take up the remaining space in the middle */
+  }
+
+  /* .middle ul { */
+  .nav-menu{
+    list-style: none; /* Removes default list styling */
+    display: flex; /* Horizontal layout for navigation links */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* .middle ul li { */
+  .nav-item {
+    margin: 0 25px; /* Space between navigation links */
+    position: relative;
+    list-style: none;
+    
+  }
+  
+  /* .middle ul li a { */
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    font-family: "Rokkitt", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 25px; 
+  }
+  
+ /* .middle ul li a:hover { */
+ .nav-link:hover {
+    color: rgb(120, 178, 126);
+    /*text-decoration: underline rgb(255, 137, 137);*/
+  }
+
+  /*dropdown styling */
+  .dropdown-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #242424;
+    display: none;
+    min-width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+
+  .dropdown-menu li a { 
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 15px; 
+    display: block;
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .dropdown-menu li a:hover {
+    background-color: rgb(120, 178, 126);
+  }
+
+  .nav-item:hover .dropdown-menu {
+    display:block;
+  }
+
+/* Right Section - Profile Icon & Sign In Button */
+.right {
+    display: flex; /* Horizontal layout for profile icon and button */
+    align-items: center; /* Vertically center the profile icon and button */
+  }
+  
+  .profile-icon {
+    height: 60px; /* Adjust profile icon size */
+    width: 60px;
+    border-radius: 50%; /* Makes it a circular icon */
+    margin-right: 40px; /* Space between icon and button */
+  }
+  
+  .sign-in-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin-right: 60px; /* Add space on the right edge */
+  }
+  
+  .sign-in-btn:hover {
+    background-color: white;
+    color: black;
+  }
+
+/*Heroimage section */
+  .hero-container {
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Center the image horizontally */
+    /* align-items: center; Center the image vertically */
+    width: 100vw; 
+    /* height: auto; */
+    /* height: 100vh;  */
+    overflow: hidden; /* Prevent scrollbars if the image overflows */
+    /* overflow-x: hidden; */
+
+  }
+  .hero-image {
+    width: 100%;  /* Makes the image fit within the screen */
+    height: 100%; 
+/* Maintains the aspect ratio  */
+    object-fit: cover; /* Ensures the image fills the container appropriately */
+  } 
+
+  .hero-details {
+    /* display:flex;
+    flex-wrap: wrap; */
+    position:relative;
+    height:400px;
+    width: 100vw;
+    /* background-color: bisque; */
+    
+  }
+  .green-divider {
+    /* position:absolute;
+    top:0px;
+    left:0px; */
+    height: 25%;
+    width: 100%;
+    background-color: #ebf6c4;
+  }
+
+    .welcome-text {
+      position: absolute; /* Position relative to the parent */
+      top: 5%; /* Position from the top of the container */
+      left: 15%; 
+      right:15%;
+      width: 70%;
+      height: 150px;
+      /* background-color: blue; */
+    }
+
+    .welcome-category {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-family: "Rokkitt", serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 20px;
+      margin-top: 17px;
+      margin-bottom: 2px;
+    }
+
+    .welcome-head {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-family: "mr-eaves-modern", sans-serif;
+      font-weight: 800;
+      font-style: normal;
+      font-size: 95px;
+      letter-spacing: 7px;
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
+
+    .welcome-subhead {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-family: "Rokkitt", serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 35px;
+      margin-top: 3px;
+      margin-bottom: 3Fpx;
+    }
+
+    .welcome-author {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-family: "Epilogue", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 20px;
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
+
+    .top-article { 
+      display:flex;
+      position:relative;
+      margin-right: 5%;
+
+    }
+
+    .top-article-image {
+    width:50%;
+    margin-left: 5%;
+    margin-bottom:110px;
+    height:auto;
+    position:relative;
+    z-index: 2
+    }
+
+    .top-article-image img {
+    width: 100%; /* Makes the image scale with the div */
+    height: auto; /* Maintains the aspect ratio */
+    display: block;
+    }
+
+    .top-background {
+      background: rgb(255, 240, 191);
+      position:absolute;
+      width: 40vw;
+      height: 300px;
+      bottom:0;
+      left:220;
+      z-index:1
+    }
+
+    .top-article-headers {
+      width:40%;
+      margin-left:5%;
+      position:relative; 
+      z-index: 2;
+    }
+
+    .top-category {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-family: "Rokkitt", serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 30px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .top-headline {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-family: "mr-eaves-modern", sans-serif;
+      font-weight: 800;
+      font-style: normal;
+      font-size: 70px;
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
+
+    .top-subhead {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-family: "Rokkitt", serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 27px;
+    }
+
+    .top-author {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-family: "Epilogue", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 15px;
+    }
+
+    .carousel {
+      width: 100vw;
+      /* margin-left:5%;
+      margin-right:5%; */
+    }
+
+    .car-header-container {
+      width:100vw;
+      margin-top: 70px;
+      display: flex;
+      justify-content: space-between;
+      
+
+    }
+
+    .carousel-header-label {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      font-family: 'Ubuntu'; 
+      font-size: 30px;
+      margin-right:5%;
+      padding-left:4%;
+    }
+
+    .carousel-arrows{
+      width:120px;
+      padding-right:5%;
+      margin-right:5%;
+      display:flex;
+      gap: 25px;
+    }
+
+        /* .carousel-header{
+       width: 100%;
+      display: flex;
+      justify-content: space-between;
+    } */
+
+    /* .carousel-label {
+      margin-left:5%;
+    } */
+
+    .carousel-articles{
+      display:flex;
+      gap: 50px;
+      /* width: 398px; */
+      width: calc(100% + 20px);
+      height: auto;
+      margin-bottom:70px;
+      overflow-x:scroll; 
+      scroll-behavior: smooth;
+      padding-left:5%;
+    }
+
+    .carousel-articles::-webkit-scrollbar {
+      display: none;
+    }
+
+    .carousel-articles {
+      -ms-overflow-style:none;
+      scrollbar-width:none;
+    }
+
+    .car-article {
+      width:100%;
+    }
+
+
+    .serene{ 
+      outline: 1px solid black;
+    }
+
+    .car-date {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      font-family: 'Ubuntu'; 
+      font-size: 15px;
+    }
+
+    .car-category {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-family: "Rokkitt", serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 20px;
+    }
+
+    .Headline-C {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-family: "mr-eaves-modern", sans-serif;
+      font-weight: 800;
+      font-style: normal;
+      font-size: 50px;
+      margin-top:1px;
+      margin-bottom:1px;
+    }
+
+    .Subhead-C { 
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-family: "Rokkitt", serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 25px;
+      margin-top:3px;
+      margin-bottom:1px;
+    }
+
+    .car-author { 
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-family: "Epilogue", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 15px;
+    }
+
+  .body-headers {
+    display:flex;
+    justify-content: space-evenly;
+  }
+
+  .pop-headers {
+    width: 30%;
+    /* background: lightgrey; */
+  }
+
+  .pop-header {
+    width: 300px;
+    margin: auto;
+    /* background-color: lightcoral; */
+  }
+
+  .ani-headers {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap:25px;
+    width: 70%;
+    justify-content: center;
+  }
+
+  .ani-header {
+    width:400px;
+  }
+
+
+  .body-header {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: 'Ubuntu'; 
+    font-size: 30px;
+  }
+
+
+  /* This is the section that holds the containers for animation articles and popular articles. It just needs to define the flex I think */
+.body-articles{
+  display:flex;
+  justify-content: space-evenly;
+  align-items:stretch;
+}
+
+  /* this is the chamber that holds all of the popular articles. They should be stacked along the left of the screen taking up only a small bit of horizontal space */
+  .popular-articles { 
+    width: 30%; 
+    /* background: lightgrey; */
+    /* border-left: 1px solid #000000; */
+  }
+
+
+  /* This is the styling for each popular article that appears on the left side of the screen with stacked articles */
+  .pop-article {
+    /* background-color: lightcoral; */
+    width: 300px;
+    margin: auto;
+  }
+
+  .Headline-B {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: "mr-eaves-modern", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 35px; 
+  }
+
+  .Subhead-B {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: "Rokkitt", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 17px; 
+  }
+
+  .vert-line {
+    width: 1px;
+    /* height: 100%;  */
+    background-color: #000000;
+    /* height: 100px; */
+
+  }
+
+  /* this is the chamber that holds all of the animation articles */
+  .animation-articles {
+    display: flex;
+    justify-content:center;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap:25px; 
+    flex-wrap: wrap;
+    width: 70%;
+    /* background: lightgoldenrodyellow; */
+  }
+
+  /* This is the styling for each article block, determening its */
+  .ani-article {
+    /* background-color: lightblue; */
+    width: 400px;
+  }
+  
+
+  .Headline-A {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: "mr-eaves-modern", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 50px; 
+  }
+
+  .Subhead-A {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: "Rokkitt", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px; 
+  }
+
+  .footer-articles { 
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .character-articles { 
+    display: flex;
+    gap: 40px;
+
+  }
+
+  .char-article {
+    width: 38%;
+  }
+
+  .friends {
+    outline: 1px solid black;
+    width:100%;
+  }
+
+  .berry { 
+    width:100%;
+  }
+
+  .Headline-D {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: "mr-eaves-modern", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 60px; 
+    margin-top:3px;
+    margin-bottom:1px;
+  }
+
+  .Subhead-D {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: "Rokkitt", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 22px; 
+    margin-top:3px;
+    margin-bottom:1px;
+  }
+
+  .char-author {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 15px; 
+  }
+
+  .footer { 
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100vw;
+    height:400px;
+  }
+
+  .top-section { 
+    display: flex;
+    /* margin-top:40px; 
+    margin-left:5%; */
+    padding-top: 40px;
+    padding-left:7%;
+    gap:30px; 
+  }
+
+  .footer-logo-container { 
+    width:15%;
+    height:20%;
+    margin-top:30px;
+  }
+  .tagline-container {
+    width:15%;
+    margin-top: 20px;
+  }
+
+  .tagline {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 22px; 
+  }
+
+  .bottom-section {
+
+    margin-top: 100px;
+    margin-left:5%;
+    /* background-color: rgb(32, 35, 35); */
+    position:relative;
+
+  }
+
+  .nav-footer { 
+    color:white;
+    width: 100%;
+    height:10%;
+    padding: 15px 10px;
+    position: absolute;
+    list-style: none;
+  }
+
+  .footer-ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* .footer-ul {
+    
+  } */
+
+  .nav-item-2 {
+    margin: 13px; /* Space between navigation links */
+    position: relative;
+    list-style: none;
+    
+  }
+
+  .nav-link-2 {
+    text-decoration: none;
+    color: white;
+    font-family: "Rokkitt", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+  }
+
+  .nav-link-2:hover {
+    color: rgb(120, 178, 126);
+    /*text-decoration: underline rgb(255, 137, 137);*/
+  }
+
+  /* .heart {
+    width:90%;
+    height:90%;
+  } */
+
+  
+
+
+
+  
